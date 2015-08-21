@@ -488,7 +488,7 @@ def remove_escapes(text):
         pattern = re.compile('|'.join(re.escape(key) for key in escapes.keys()))
         return pattern.sub(lambda x: escapes[x.group()], text)
 
-if __name__ == '__main__':
+def main():
     """
     The code below starts an JSONRPC server
     """
@@ -522,3 +522,5 @@ if __name__ == '__main__':
         print >>sys.stderr, "Bye."
         exit()
 
+if __name__ == '__main__':
+    main()

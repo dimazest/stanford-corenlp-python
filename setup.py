@@ -34,5 +34,9 @@ setup(
             "(GPLv2+)"),
         "Programming Language :: Python",
     ],
+    entry_points={
+        'console_scripts': [
+            'corenlp = corenlp.corenlp:main',
+        ]
+    }
 )
-
